@@ -27,6 +27,27 @@ rm tsetup*
 * Run as user: ```gnome-session-properties```
 * Add entry: ```~/Telegram/Telegram```
 
+### Installation of Spotify
+
+```bash
+# 1. Add the Spotify repository signing key to be able to verify downloaded packages
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+
+# 2. Add the Spotify repository
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+
+# 3. Update list of available packages
+sudo apt-get update
+
+# 4. Install Spotify
+sudo apt-get install spotify-client
+
+# 5. Starting in Ubuntus 15.04 this lib needs to be installed
+cd ~/Downloads
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
+sudo dpkag -i libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
+```
+
 -----
 **Not working in Ubuntu 15.10:**
 ## Enable 3 finger tapping on the Synaptics Clickpad
