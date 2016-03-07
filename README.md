@@ -6,6 +6,12 @@ In this Repository Iam going to collect all the littel tweaks I do usually after
 Follow [this description in order to create a service that deactivates bluetooth at startup](https://wiki.ubuntuusers.de/Bluetooth/Einrichtung#Deaktivierung-beim-Start)
 
 ## Installation of additional Software
+
+### Install Extensions for Thunderbird
+
+1. [Manually Sort Folders Extension](https://addons.mozilla.org/de/thunderbird/addon/manually-sort-folders/)
+2. Enigmail
+
 ### Install Geary E-Mail Client
 
 ```bash
