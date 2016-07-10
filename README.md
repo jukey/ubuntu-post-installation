@@ -51,7 +51,7 @@ sudo apt-get install spotify-client
 # 5. Starting in Ubuntus 15.04 this lib needs to be installed
 cd ~/Downloads
 wget https://launchpad.net/ubuntu/+archive/primary/+files/libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
-sudo dpkag -i libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
+sudo dpkg -i libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
 ```
 
 -----
