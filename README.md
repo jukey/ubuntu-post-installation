@@ -7,6 +7,19 @@ Follow [this description in order to create a service that deactivates bluetooth
 
 ## Installation of additional Software
 
+### Install Tor Browser Bundle
+
+Start Tor Browser when a new Network Connection is established only (see also [general infromation how to run a script when connecting to a network](https://wiki.ubuntu.com/OnNetworkConnectionRunScript)):
+
+add this script to `/etc/network/if-up.d/`
+
+```bash
+#!/bin/bash
+pkill firefox
+/path/to/tor-browser_en-US/Browser/start-tor-browser &
+```
+*[see example script](https://github.com/jukey/ubuntu-post-installation/blob/master/scripts/restart-tor-browser.sh)*
+
 ### Install Extensions for Thunderbird
 
 1. [Manually Sort Folders Extension](https://addons.mozilla.org/de/thunderbird/addon/manually-sort-folders/)
