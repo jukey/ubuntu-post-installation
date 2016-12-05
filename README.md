@@ -1,9 +1,29 @@
 # ubuntu-post-installation
 In this Repository Iam going to collect all the littel tweaks I do usually after setting up the system. I am using a Lenovo Thinkpad x240
 
-# Tested in Ubuntu 15.10
+# Tested in Ubuntu 16.04 (and 15.10)
 ## Disable Bluetooth at startup
 Follow [this description in order to create a service that deactivates bluetooth at startup](https://wiki.ubuntuusers.de/Bluetooth/Einrichtung#Deaktivierung-beim-Start)
+
+## Application Specific Changes
+
+### Use Firefox ProfileManager
+
+According to [this
+article](https://developer.mozilla.org/en-US/Firefox/Multiple_profiles) it is possible to let Firefox ask for a specific
+profile when launched.
+
+The line:
+
+```
+Exec=firefox %u
+```
+
+needs to be changed to:
+
+```
+Exec=firefox --ProfileManager %u
+```
 
 ## Installation of additional Software
 
