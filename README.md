@@ -13,14 +13,11 @@ According to [this
 article](https://developer.mozilla.org/en-US/Firefox/Multiple_profiles) it is possible to let Firefox ask for a specific
 profile when launched.
 
-The line:
-
+In the file `/usr/share/applications/firefox.desktop` the following line needs to be changed:
 ```
 Exec=firefox %u
 ```
-
 needs to be changed to:
-
 ```
 Exec=firefox --ProfileManager %u
 ```
