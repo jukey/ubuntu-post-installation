@@ -1,7 +1,7 @@
 # ubuntu-post-installation
 This Repository conntains all the littel tweaks I do usually after setting up the system. I am using a Lenovo Thinkpad x240. I recently switched to Ubuntu Gnome and I am using currently version 17.04. This means Gnome Shell as default desktop environment and Evolution as email and calendar software.
 
-# Testen in Ubuntu Gnome 17.04
+# Tested in Ubuntu Gnome 17.04
 
 - Enable [Touch Gesture support][(https://github.com/bulletmark/libinput-gestures)
   - under construction: The ideal touch configuration based on [this guide](https://wiki.gnome.org/Design/OS/Gestures)
