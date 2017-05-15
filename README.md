@@ -5,6 +5,7 @@ This Repository conntains all the littel tweaks I do usually after setting up th
 
 - Enable [Touch Gesture support][(https://github.com/bulletmark/libinput-gestures)
   - under construction: The ideal touch configuration based on [this guide](https://wiki.gnome.org/Design/OS/Gestures)
+- Add `powertop --auto-tune` to startup applications
 
 # Tested in Ubuntu 16.04 (and 15.10)
 ## Disable Bluetooth at startup
