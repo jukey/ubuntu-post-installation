@@ -3,10 +3,25 @@ This Repository conntains all the littel tweaks I do usually after setting up th
 
 # Tested in Ubuntu Gnome 17.04
 
+## In use
+
+- Installed (and used) Gnome Shell Extensions
+  - [Suspend Button](https://extensions.gnome.org/extension/826/suspend-button/)
+  - [Applications Menu](https://extensions.gnome.org/extension/6/applications-menu/)
+  - [Open Weather](https://extensions.gnome.org/extension/750/openweather/)
+  - [Places Status Indicator](https://extensions.gnome.org/extension/8/places-status-indicator/)
+  - [RSS Feed](https://extensions.gnome.org/extension/948/rss-feed/)
+  - [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+- Install tor browser bundle: `torbrowser-launcher`
+- Add `powertop --auto-tune` to startup applications
+  - In order to add this to `/etc/crontab`: `@reboot 	root	powertop --auto-tune`
+  - there are problems when using a USB mouse as the USB port get's into some power save mode and one need to click before moving the mouse further...
+
+
+## Working but not in use
+
 - Enable [Touch Gesture support](https://github.com/bulletmark/libinput-gestures)
   - under construction: The ideal touch configuration based on [this guide](https://wiki.gnome.org/Design/OS/Gestures)
-- Add `powertop --auto-tune` to startup applications
-- Install tor browser bundle: `torbrowser-launcher`
 
 # Tested in Ubuntu 16.04 (and 15.10)
 ## Disable Bluetooth at startup
