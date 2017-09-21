@@ -17,6 +17,9 @@ This Repository conntains all the littel tweaks I do usually after setting up th
   - In order to add this to `/etc/crontab`: `@reboot 	root	powertop --auto-tune`
   - there are problems when using a USB mouse as the USB port get's into some power save mode and one need to click before moving the mouse further...
 
+## Problems and Workarounds
+
+- Bluetooth Headphone does not work corretly (no A2DP for Music). The [problem is described here and the proposed solution](https://askubuntu.com/questions/934381/bluetooth-speaker-not-doing-a2dp-ubuntu-gnome-17-04) worked fine for me.
 
 ## Working but not in use
 
