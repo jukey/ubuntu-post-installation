@@ -1,5 +1,26 @@
 # ubuntu-post-installation
-This Repository conntains all the littel tweaks I do usually after setting up the system. I am using a Lenovo Thinkpad x240. I recently switched to Ubuntu Gnome and I am using currently version 17.04. This means Gnome Shell as default desktop environment and Evolution as email and calendar software.
+This Repository conntains all the littel tweaks I do usually after setting up the system. I am using a Lenovo Thinkpad x240. I am using currently version 18.10. This means Gnome Shell as default desktop environment.
+
+# Tested in Ubuntu 18.10
+
+## Two-finger scrolling does not work after resume
+
+Edit the file `/etc/default/grub` and change the line:
+
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+```
+
+to
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash psmouse.synaptics_intertouch=0"
+```
+
+then
+```
+sudo update-grub
+sudo reboot
+```
 
 # Tested in Ubuntu Gnome 17.04
 
